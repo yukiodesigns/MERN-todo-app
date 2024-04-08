@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# MERN Todo List Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple Todo List web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. Users can add, delete, and mark tasks as completed.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Add Task**: Users can add new tasks to the todo list by entering a task name and clicking the "Add" button.
+- **Delete Task**: Users can delete tasks by clicking on the delete button next to each task.
+- **Mark Task as Completed**: Users can mark tasks as completed by clicking on a checkbox next to each task.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **MongoDB**: Database to store the todo tasks.
+- **Express.js**: Backend framework to handle HTTP requests and responses.
+- **React.js**: Frontend library to build the user interface.
+- **Node.js**: JavaScript runtime environment to run server-side code.
+- **Axios**: HTTP client for making requests to the backend API.
+- **Bootstrap**: CSS framework for styling the application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup Instructions
 
-### `npm test`
+1. **Clone the repository**:
+   ```
+   git clone https://github.com/yourusername/mern-todo-list.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Navigate to the project directory**:
+   ```
+   cd mern-todo-list
+   ```
 
-### `npm run build`
+3. **Install dependencies**:
+   ```
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Start the backend server**:
+   ```
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. **Navigate to the client directory**:
+   ```
+   cd client
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. **Install client dependencies**:
+   ```
+   npm install
+   ```
 
-### `npm run eject`
+7. **Start the React development server**:
+   ```
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+8. **Open your web browser** and go to `http://localhost:3000` to view the todo list application.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## API Endpoints
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **GET /todo**: Get all todo tasks.
+- **POST /todo/new**: Add a new todo task.
+- **DELETE /todo/delete/:id**: Delete a todo task by ID.
+- **PUT /todo/update/:id**: Update a todo task (e.g., mark as completed) by ID.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Structure
 
-## Learn More
+- **`server.js`**: Entry point for the backend server.
+- **`routes/todo.js`**: Defines routes for handling todo tasks CRUD operations.
+- **`models/Todo.js`**: Defines the MongoDB Todo schema.
+- **`client/src/App.js`**: Main component for the React frontend.
+- **`client/src/components/TodoItem.js`**: Component to render individual todo items.
+- **`client/src/App.css`**: Styles for the React frontend.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Your Name](https://github.com/yourusername)
+- [Contributor 1](https://github.com/contributor1)
+- [Contributor 2](https://github.com/contributor2)
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Analyzing the Bundle Size
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [MongoDB](https://www.mongodb.com/)
+- [Express.js](https://expressjs.com/)
+- [React.js](https://reactjs.org/)
+- [Node.js](https://nodejs.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Axios](https://axios-http.com/)
